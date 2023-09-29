@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-border">
+            <div class="logo">
+                <img src="imagens/b.png" alt="" srcset="">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Bebidas</a>
+                <a href="#">Login</a>
+            </div>
+        </div><!--box-border(center)-->
+    </header>
+    <section class="ouver"><!--about-->
+        <div class="extras">
+            <img src="imagens/img1.png" class="Starbuks">
+            <div class="redes-sociais">
+                <a href=""><img src="imagens/facebook.png" alt=""></a>
+                <a href=""><img src="imagens/instagram.png" alt=""></a>
+                <a href=""><img src="imagens/twitter.png" alt=""></a>
+            </div>
+        </div><!--extras-->
+        <div class="textos">
+            <div class="textos-sobre">
+                <h1>It's not just Coffe <br> It's <span style="color: #005c00;"> Starbucks</span></h1>
+                <p>A mente é fértil, pra sonhar não tem limite
+                    E quem diria, nós tá feroz, naquele pique
+                     <br>E de primeira vista uns falam que não existe
+                    E talvez foi uma miragem ou então cena de filme</p>
+                    <button>Sejam Bem-Vindos!</button>
+            </div><!--textos-sobre-->
+        </div>
+        <ul class="thumb">
+             <li><img src="imagens/thumb1.png" onclick="imgSlider('imagens/img1.png'); changeCirclecolor('#005c00')" ></li>
+             <li><img src="imagens/thumb2.png" onclick="imgSlider('imagens/img2.png'); changeCirclecolor('#fa48d9')"></li>
+             <li><img src="imagens/thumb3.png" onclick="imgSlider('imagens/img3.png'); changeCirclecolor('#e024d1')"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbuks').src = anything;
+        }
+        function changeCirclecolor(color){
+            const extras = document.querySelector('.extras');
+            extras.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
